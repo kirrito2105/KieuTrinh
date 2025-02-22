@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động - Lớp học 12A7</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #E6E6FA;
+      color: #333;
+    }
+    nav {
+      background-color: #B19CD9;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .event {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #B19CD9;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+    .event button {
+      background-color: #B19CD9;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .event button:hover {
+      background-color: #9A7BBE;
+    }
+  </style>
+  <script>
+    function toggleContent(id) {
+      var content = document.getElementById(id);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="members.html">Thành viên</a></li>
+      <li><a href="activities.html">Hoạt động</a></li>
+      <li><a href="gallery.html">Thư viện ảnh</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <h1>Các hoạt động nổi bật</h1>
+  <div class="event">
+    <h3>Văn nghệ học đường</h3>
+    <p>Đêm diễn tập hợp những tiết mục đặc sắc nhất tại chung kết.</p>
+    <img src="IMG_20250124_041630.jpg" width="300"
+    <button onclick="toggleContent('event1')">Xem thêm</button>
+    <p id="event1" style="display: none;">Chờ đợi các hoạt động khác và trang trí của lớp vào các dịp sau nhé </p>
+  
+  </div>
+</body>
+</html>
