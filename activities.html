@@ -40,21 +40,66 @@
     .event {
       background-color: #fff;
       margin: 20px auto;
-      padding: 15px;
+      padding: 20px;
       border: 1px solid #B19CD9;
       border-radius: 8px;
-      max-width: 600px;
+      max-width: 1000px; /* Increased max-width */
+      box-shadow: 0 2px 4px rgba(177, 156, 217, 0.2);
     }
-    .event button {
+
+    .event table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .event td {
+      border: 2px solid #B19CD9;
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    .event tr:first-child td {
       background-color: #B19CD9;
       color: white;
-      border: none;
-      padding: 8px 12px;
-      cursor: pointer;
-      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      font-size: 1.1em;
     }
-    .event button:hover {
-      background-color: #9A7BBE;
+
+    .event img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .event img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .event p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .event {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .event td {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   </style>
   <script>
@@ -82,12 +127,34 @@
 
   <h1>Các hoạt động nổi bật</h1>
   <div class="event">
-    <h3>Văn nghệ học đường</h3>
-    <p>Đêm diễn tập hợp những tiết mục đặc sắc nhất tại chung kết.</p>
-    <img src="IMG_20250124_041630.jpg" width="300"
-    <button onclick="toggleContent('event1')">Xem thêm</button>
-    <p id="event1" style="display: none;">Chờ đợi các hoạt động khác và trang trí của lớp vào các dịp sau nhé </p>
-  
+    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+      <tr>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">Lớp 10</td>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">Lớp 11</td>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">Lớp 12</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">
+          Năm lớp 10 là năm đầu tiên chập chững bước vào ngôi trường mới tiếp xúc bạn mới.Cũng là năm trải qua nhiều kỷ niệm đặc biệt, những việc làm, người bạn điều là những việc đầu tiên, những trải nghiêm vô cùng thú vị khó quên trong ký ức mang hình hài thanh xuân. Thời gian cứ trôi, dòng chảy tưởng chừng chậm chạp ây đã in dấu những kỷ khó phai trong ký ức của cấp 3
+          <img src="lop10.jpg" alt="">
+          <img src="lop10_1.jpg">
+          <img src="lop10_2.jpg" alt="">
+          <img src="lop10_3.jpg">
+        </td>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">
+          Và thời gian cứ trôi năm 11 cũng đến, những chạm dừng chân mà dâu chân tuổi trẻ phải đặt chân đến, ta càng có hơn nhiều khoảnh khắc được ở bên nhau, được yêu được thương như một gia đình, 70%  thời gian một ngày ta dành cho nhau vì học tập vì hoạt đông, vì sự kiện. Chúng ta như pháo hoa rự rỡ chỉ nổ một lần trong đời và không còn lần thứ 2
+          <img src="lop11.jpg" alt="">
+          <img src="lop11_1.jpg">
+          <img src="lop11_2.jpg" alt="">
+          <img src="lop11_3.jpg">
+        </td>
+        <td style="border: 1px solid #B19CD9; padding: 10px;">
+          Thế là chạm dừng chân cuối cùng đã đến dấu ấn năm lớp 12 đã bắt đầu xuất hiện trong tâm trí của người học sinh khoảng thời gian ấy bắt đầu đếm ngược ta càng biến chân trọng những giây phút gần như cuối cùng ấy.Những hoạt đồng văn nghệ, hội trại.... như một dấu ấn đánh dấu tuổi trẻ đầy nhiệt huyết những ngày thâu đêm không ngủ, những ngày hết mình vì tập thể để xâu dựng kỷ niệm đẹp
+          <img src="lop12.jpg" alt="">
+          <img src="lop12_1.jpg">
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>
